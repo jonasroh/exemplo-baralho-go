@@ -1,1 +1,0 @@
-# exemplo-baralho-go
