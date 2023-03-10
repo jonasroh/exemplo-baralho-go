@@ -1,6 +1,7 @@
 package main
 
 func main() {
-	cartas := novoDeck()
-	cartas.salvaEmArquivo("minhas_cartas")
+	cartas := importDeck("minhas_cartas")
+	cartas.embaralhaDeck()
+	cartas.print()
 }
