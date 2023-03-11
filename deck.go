@@ -24,7 +24,6 @@ func novoDeck() deck {
 			cartas = append(cartas, valor+" de "+naipe)
 		}
 	}
-	cartas = append(cartas, "Coringa")
 	return cartas
 }
 
@@ -59,7 +58,6 @@ func importDeck(nomeArquivo string) deck {
 
 }
 
-func (d deck) embaralhaDeck() deck {
+func (d deck) embaralhaDeck() {
 	shuffle.Slice(d)
-	return d
 }
